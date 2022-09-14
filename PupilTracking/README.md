@@ -2,7 +2,7 @@
 Zoomed-in pupil videos. Black frames are piezo flyback.
 Illumination: difracted 2P laser light
 CMad58, 62, 65, 67, 68 (AC axons, mouse disco)
-RD10278, CMad85, CMad86 (LM axons)
+RD10278, CMad85, CMad86 (LM axons) - mobnet for CMad85 nad 86?
 
 ## Run DeepLabCut (ResNet)
 (Pupil fitted with 8 points)
