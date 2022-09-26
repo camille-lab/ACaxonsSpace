@@ -1,0 +1,45 @@
+https://github.com/DeepLabCut/DeepLabCut/blob/master/docs/standardDeepLabCut_UserGuide.md
+
+## Command
+cd DeepLabCut
+conda activate DLC-GPU
+python -m deeplabcut
+
+## Create a new project
+1) Creat a folder with the videos you're going to manually label
+2) Create a project in DLC. Copy the videos (otherwise it buggs).
+3) Edit the config file.  Edit numframes2pick, bodyparts, plotting config, pcutoff, (dotsize)
+2) Extract frames
+3) Label frames
+4) Create training index
+5) Train
+
+ -- to restart trainig from a checkpoint, edit the pose_cfg.yaml in the train subdirectory.
+modify 'init_weight': give the full path and the snapshot, without the file extension
+
+## Load existing project
+1) Load config file
+2) Analyze videos
+- save as .csv
+- filter the predictions
+- ResNet: shuffle 0 -> Sep 2022 = 1
+- training set index: 0
+3) Create Videos (optinal)
+
+_______________ Note:________________
+CMad58 w/ 8 pts: all labeled
+CMad62_pos2 not great,
+pos3: bad
+CMad65_pos5: not great
+
+## Refinement:
+1) Add new data: one can identify and extract outliers (i think k-means works better)
+(might need to add the videos in the config file and copy them in the main folder)
+2) Refine label. choose a few outliers per file (maybe 5. to edit in the config file)
+3) Merge. will create new iteration. So one can always use the old one
+4) Create training dataset
+
+______________Good data for illustration:________________
+CMad62_pos04
+CMad67_pos02
+CMad67_pos03
