@@ -1,0 +1,14 @@
+1. 'Preprocess_Batch'
+	update mouse and position list
+	change 'saveDir_variable' (used in 1.1)
+
+1.1. AfterSuite2P_Ad_v3_Batch
+	check the numberOfFrames and expected number or files
+	-> Ftraces_merged
+
+1.2 SortData_CM_v4_SPKalone_Batch
+	maybe can use 'path' instead of 
+	hopefully I save the right pearson's coeff
+	-> sortedData
+
+That's what I've done so far
